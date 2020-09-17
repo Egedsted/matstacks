@@ -1,0 +1,11 @@
+C:\Users\lebee\source\repos\SocketTeknologi\ServerSide\bin\Debug\netcoreapp3.0\ServerSide.exe
+C:\Users\lebee\source\repos\SocketTeknologi\ServerSide\bin\Debug\netcoreapp3.0\ServerSide.deps.json
+C:\Users\lebee\source\repos\SocketTeknologi\ServerSide\bin\Debug\netcoreapp3.0\ServerSide.runtimeconfig.json
+C:\Users\lebee\source\repos\SocketTeknologi\ServerSide\bin\Debug\netcoreapp3.0\ServerSide.runtimeconfig.dev.json
+C:\Users\lebee\source\repos\SocketTeknologi\ServerSide\bin\Debug\netcoreapp3.0\ServerSide.dll
+C:\Users\lebee\source\repos\SocketTeknologi\ServerSide\bin\Debug\netcoreapp3.0\ServerSide.pdb
+C:\Users\lebee\source\repos\SocketTeknologi\ServerSide\obj\Debug\netcoreapp3.0\ServerSide.csprojAssemblyReference.cache
+C:\Users\lebee\source\repos\SocketTeknologi\ServerSide\obj\Debug\netcoreapp3.0\ServerSide.AssemblyInfoInputs.cache
+C:\Users\lebee\source\repos\SocketTeknologi\ServerSide\obj\Debug\netcoreapp3.0\ServerSide.AssemblyInfo.cs
+C:\Users\lebee\source\repos\SocketTeknologi\ServerSide\obj\Debug\netcoreapp3.0\ServerSide.dll
+C:\Users\lebee\source\repos\SocketTeknologi\ServerSide\obj\Debug\netcoreapp3.0\ServerSide.pdb

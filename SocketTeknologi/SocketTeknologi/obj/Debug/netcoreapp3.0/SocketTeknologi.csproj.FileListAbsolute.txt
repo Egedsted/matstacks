@@ -1,0 +1,11 @@
+C:\Users\lebee\source\repos\SocketTeknologi\SocketTeknologi\bin\Debug\netcoreapp3.0\SocketTeknologi.exe
+C:\Users\lebee\source\repos\SocketTeknologi\SocketTeknologi\bin\Debug\netcoreapp3.0\SocketTeknologi.deps.json
+C:\Users\lebee\source\repos\SocketTeknologi\SocketTeknologi\bin\Debug\netcoreapp3.0\SocketTeknologi.runtimeconfig.json
+C:\Users\lebee\source\repos\SocketTeknologi\SocketTeknologi\bin\Debug\netcoreapp3.0\SocketTeknologi.runtimeconfig.dev.json
+C:\Users\lebee\source\repos\SocketTeknologi\SocketTeknologi\bin\Debug\netcoreapp3.0\SocketTeknologi.dll
+C:\Users\lebee\source\repos\SocketTeknologi\SocketTeknologi\bin\Debug\netcoreapp3.0\SocketTeknologi.pdb
+C:\Users\lebee\source\repos\SocketTeknologi\SocketTeknologi\obj\Debug\netcoreapp3.0\SocketTeknologi.csprojAssemblyReference.cache
+C:\Users\lebee\source\repos\SocketTeknologi\SocketTeknologi\obj\Debug\netcoreapp3.0\SocketTeknologi.AssemblyInfoInputs.cache
+C:\Users\lebee\source\repos\SocketTeknologi\SocketTeknologi\obj\Debug\netcoreapp3.0\SocketTeknologi.AssemblyInfo.cs
+C:\Users\lebee\source\repos\SocketTeknologi\SocketTeknologi\obj\Debug\netcoreapp3.0\SocketTeknologi.dll
+C:\Users\lebee\source\repos\SocketTeknologi\SocketTeknologi\obj\Debug\netcoreapp3.0\SocketTeknologi.pdb
