@@ -348,3 +348,18 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+SocketTeknologi/Client2/obj/Client2.csproj.nuget.dgspec.json
+SocketTeknologi/Client2/obj/Client2.csproj.nuget.g.props
+SocketTeknologi/Client2/obj/Debug/netcoreapp3.0/Client2.assets.cache
+SocketTeknologi/Client2/obj/Debug/netcoreapp3.0/Client2.csprojAssemblyReference.cache
+SocketTeknologi/Client2/obj/project.assets.json
+SocketTeknologi/ServerSide/obj/Debug/netcoreapp3.0/ServerSide.assets.cache
+SocketTeknologi/ServerSide/obj/Debug/netcoreapp3.0/ServerSide.csprojAssemblyReference.cache
+SocketTeknologi/ServerSide/obj/project.assets.json
+SocketTeknologi/ServerSide/obj/ServerSide.csproj.nuget.dgspec.json
+SocketTeknologi/ServerSide/obj/ServerSide.csproj.nuget.g.props
+SocketTeknologi/SocketTeknologi/obj/Debug/netcoreapp3.0/SocketTeknologi.assets.cache
+SocketTeknologi/SocketTeknologi/obj/Debug/netcoreapp3.0/SocketTeknologi.csprojAssemblyReference.cache
+SocketTeknologi/SocketTeknologi/obj/project.assets.json
+SocketTeknologi/SocketTeknologi/obj/SocketTeknologi.csproj.nuget.dgspec.json
+SocketTeknologi/SocketTeknologi/obj/SocketTeknologi.csproj.nuget.g.props
