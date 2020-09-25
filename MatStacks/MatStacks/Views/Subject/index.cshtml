@@ -1,5 +1,10 @@
-﻿@model IEnumerable<MatStacks.Models.Post>
-@foreach (var p in Model)
+﻿@model MatStacks.Models.Subject
+
+<h1>@Model.Title</h1>
+
+<h3>@Model.Description</h3>
+
+@foreach (var p in Model.Posts)
 {
     <div>
        
@@ -8,3 +13,7 @@
         </h2>
     </div>
 }
+
+<h4>
+    <a href="http://localhost:61509/Post/Create/@Model.Id">Lav dit eget opslag</a>
+</h4>

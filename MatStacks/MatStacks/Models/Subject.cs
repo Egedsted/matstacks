@@ -14,8 +14,9 @@ namespace MatStacks.Models
 
         public string Description { get; set; }
 
-        public List<Post> posts = new List<Post>();
+        public List<Post> Posts { get; set; } = new List<Post>();
 
         public long Id { get; set; }
+
     }
 }

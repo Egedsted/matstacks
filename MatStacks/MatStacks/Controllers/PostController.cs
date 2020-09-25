@@ -1,6 +1,7 @@
 ﻿using MatStacks.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,11 @@ namespace MatStacks.Controllers
 {
     public class PostController : Controller
     {
-
+        private readonly SubjectDataContext db;
+        public PostController(SubjectDataContext db)
+        {
+            this.db = db;
+        }
         public IActionResult Index(long? id)
         {
             List<Post> posts = new List<Post> { new Post { Title = "2+2", Author = "Siboni", Body = "Jeg tror at 2+2 = 3", Date = DateTime.Now, Id = 1 },
@@ -27,6 +32,24 @@ namespace MatStacks.Controllers
 
             //HJÆLP
         }
+        public IActionResult Create(long Id)
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Create(long id, Post p)
+        {
+            if (!ModelState.IsValid)
+                return View();
+            p.Date = DateTime.Now;
+            //p.Author = User.Identity.Name;
+            var subject = db.Subjects.Where(x => x.Id == id)
+                .Include(x => x.Posts).FirstOrDefault();
+            subject.Posts.Add(p);
+            db.Update<Subject>(subject);
+            db.SaveChanges();
 
+            return View();
+        }
     }
 }
