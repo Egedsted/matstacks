@@ -1,0 +1,10 @@
+﻿@model IEnumerable<MatStacks.Models.Post>
+@foreach (var p in Model)
+{
+    <div>
+       
+        <h2>
+            @Html.ActionLink(@p.Title, "Index", "Post", new { id = p.Id }, null)
+        </h2>
+    </div>
+}
