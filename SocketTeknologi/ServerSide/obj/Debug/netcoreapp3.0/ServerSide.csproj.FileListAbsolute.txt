@@ -9,3 +9,15 @@ C:\Users\lebee\source\repos\SocketTeknologi\ServerSide\obj\Debug\netcoreapp3.0\S
 C:\Users\lebee\source\repos\SocketTeknologi\ServerSide\obj\Debug\netcoreapp3.0\ServerSide.AssemblyInfo.cs
 C:\Users\lebee\source\repos\SocketTeknologi\ServerSide\obj\Debug\netcoreapp3.0\ServerSide.dll
 C:\Users\lebee\source\repos\SocketTeknologi\ServerSide\obj\Debug\netcoreapp3.0\ServerSide.pdb
+D:\Programmering\matstacks\SocketTeknologi\ServerSide\obj\Debug\netcoreapp3.0\ServerSide.AssemblyInfoInputs.cache
+D:\Programmering\matstacks\SocketTeknologi\ServerSide\obj\Debug\netcoreapp3.0\ServerSide.AssemblyInfo.cs
+D:\Programmering\matstacks\SocketTeknologi\ServerSide\obj\Debug\netcoreapp3.0\ServerSide.csproj.CoreCompileInputs.cache
+D:\Programmering\matstacks\SocketTeknologi\ServerSide\obj\Debug\netcoreapp3.0\ServerSide.dll
+D:\Programmering\matstacks\SocketTeknologi\ServerSide\obj\Debug\netcoreapp3.0\ServerSide.pdb
+D:\Programmering\matstacks\SocketTeknologi\ServerSide\bin\Debug\netcoreapp3.0\ServerSide.exe
+D:\Programmering\matstacks\SocketTeknologi\ServerSide\bin\Debug\netcoreapp3.0\ServerSide.deps.json
+D:\Programmering\matstacks\SocketTeknologi\ServerSide\bin\Debug\netcoreapp3.0\ServerSide.runtimeconfig.json
+D:\Programmering\matstacks\SocketTeknologi\ServerSide\bin\Debug\netcoreapp3.0\ServerSide.runtimeconfig.dev.json
+D:\Programmering\matstacks\SocketTeknologi\ServerSide\bin\Debug\netcoreapp3.0\ServerSide.dll
+D:\Programmering\matstacks\SocketTeknologi\ServerSide\bin\Debug\netcoreapp3.0\ServerSide.pdb
+D:\Programmering\matstacks\SocketTeknologi\ServerSide\obj\Debug\netcoreapp3.0\ServerSide.genruntimeconfig.cache
