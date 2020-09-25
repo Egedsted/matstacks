@@ -1,0 +1,15 @@
+﻿@model MatStacks.Models.Post
+
+
+<h1>@Model.Title</h1>
+<h2>@Model.Body </h2>
+<h3>@Model.Date</h3>
+<h4>@Model.Author</h4>
+
+@foreach (var c in Model.Comments)
+ {
+    <h2> @c.ResponsText </h2> 
+    <h3> @c.Author </h3> 
+    <h3>@DateTime.Now </h3>
+    <h4> @c.Score </h4> 
+ }
