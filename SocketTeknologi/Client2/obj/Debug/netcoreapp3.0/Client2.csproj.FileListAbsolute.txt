@@ -9,3 +9,15 @@ C:\Users\lebee\source\repos\SocketTeknologi\Client2\obj\Debug\netcoreapp3.0\Clie
 C:\Users\lebee\source\repos\SocketTeknologi\Client2\obj\Debug\netcoreapp3.0\Client2.AssemblyInfo.cs
 C:\Users\lebee\source\repos\SocketTeknologi\Client2\obj\Debug\netcoreapp3.0\Client2.dll
 C:\Users\lebee\source\repos\SocketTeknologi\Client2\obj\Debug\netcoreapp3.0\Client2.pdb
+D:\Programmering\matstacks\SocketTeknologi\Client2\bin\Debug\netcoreapp3.0\Client2.exe
+D:\Programmering\matstacks\SocketTeknologi\Client2\bin\Debug\netcoreapp3.0\Client2.deps.json
+D:\Programmering\matstacks\SocketTeknologi\Client2\bin\Debug\netcoreapp3.0\Client2.runtimeconfig.json
+D:\Programmering\matstacks\SocketTeknologi\Client2\bin\Debug\netcoreapp3.0\Client2.runtimeconfig.dev.json
+D:\Programmering\matstacks\SocketTeknologi\Client2\bin\Debug\netcoreapp3.0\Client2.dll
+D:\Programmering\matstacks\SocketTeknologi\Client2\bin\Debug\netcoreapp3.0\Client2.pdb
+D:\Programmering\matstacks\SocketTeknologi\Client2\obj\Debug\netcoreapp3.0\Client2.AssemblyInfoInputs.cache
+D:\Programmering\matstacks\SocketTeknologi\Client2\obj\Debug\netcoreapp3.0\Client2.AssemblyInfo.cs
+D:\Programmering\matstacks\SocketTeknologi\Client2\obj\Debug\netcoreapp3.0\Client2.csproj.CoreCompileInputs.cache
+D:\Programmering\matstacks\SocketTeknologi\Client2\obj\Debug\netcoreapp3.0\Client2.dll
+D:\Programmering\matstacks\SocketTeknologi\Client2\obj\Debug\netcoreapp3.0\Client2.pdb
+D:\Programmering\matstacks\SocketTeknologi\Client2\obj\Debug\netcoreapp3.0\Client2.genruntimeconfig.cache

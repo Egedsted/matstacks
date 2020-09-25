@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\egeds\\Documents\\GitHub\\matstacks\\SocketTeknologi\\Client2\\Client2.csproj": {}
+    "D:\\Programmering\\matstacks\\SocketTeknologi\\Client2\\Client2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\egeds\\Documents\\GitHub\\matstacks\\SocketTeknologi\\Client2\\Client2.csproj": {
+    "D:\\Programmering\\matstacks\\SocketTeknologi\\Client2\\Client2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\egeds\\Documents\\GitHub\\matstacks\\SocketTeknologi\\Client2\\Client2.csproj",
+        "projectUniqueName": "D:\\Programmering\\matstacks\\SocketTeknologi\\Client2\\Client2.csproj",
         "projectName": "Client2",
-        "projectPath": "C:\\Users\\egeds\\Documents\\GitHub\\matstacks\\SocketTeknologi\\Client2\\Client2.csproj",
-        "packagesPath": "C:\\Users\\egeds\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\egeds\\Documents\\GitHub\\matstacks\\SocketTeknologi\\Client2\\obj\\",
+        "projectPath": "D:\\Programmering\\matstacks\\SocketTeknologi\\Client2\\Client2.csproj",
+        "packagesPath": "C:\\Users\\jacob\\.nuget\\packages\\",
+        "outputPath": "D:\\Programmering\\matstacks\\SocketTeknologi\\Client2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\egeds\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jacob\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

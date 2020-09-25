@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.0": []
   },
   "packageFolders": {
-    "C:\\Users\\egeds\\.nuget\\packages\\": {}
+    "C:\\Users\\jacob\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\egeds\\Documents\\GitHub\\matstacks\\SocketTeknologi\\ServerSide\\ServerSide.csproj",
+      "projectUniqueName": "D:\\Programmering\\matstacks\\SocketTeknologi\\ServerSide\\ServerSide.csproj",
       "projectName": "ServerSide",
-      "projectPath": "C:\\Users\\egeds\\Documents\\GitHub\\matstacks\\SocketTeknologi\\ServerSide\\ServerSide.csproj",
-      "packagesPath": "C:\\Users\\egeds\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\egeds\\Documents\\GitHub\\matstacks\\SocketTeknologi\\ServerSide\\obj\\",
+      "projectPath": "D:\\Programmering\\matstacks\\SocketTeknologi\\ServerSide\\ServerSide.csproj",
+      "packagesPath": "C:\\Users\\jacob\\.nuget\\packages\\",
+      "outputPath": "D:\\Programmering\\matstacks\\SocketTeknologi\\ServerSide\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\egeds\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jacob\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

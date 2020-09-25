@@ -9,3 +9,15 @@ C:\Users\lebee\source\repos\SocketTeknologi\SocketTeknologi\obj\Debug\netcoreapp
 C:\Users\lebee\source\repos\SocketTeknologi\SocketTeknologi\obj\Debug\netcoreapp3.0\SocketTeknologi.AssemblyInfo.cs
 C:\Users\lebee\source\repos\SocketTeknologi\SocketTeknologi\obj\Debug\netcoreapp3.0\SocketTeknologi.dll
 C:\Users\lebee\source\repos\SocketTeknologi\SocketTeknologi\obj\Debug\netcoreapp3.0\SocketTeknologi.pdb
+D:\Programmering\matstacks\SocketTeknologi\SocketTeknologi\bin\Debug\netcoreapp3.0\SocketTeknologi.exe
+D:\Programmering\matstacks\SocketTeknologi\SocketTeknologi\bin\Debug\netcoreapp3.0\SocketTeknologi.deps.json
+D:\Programmering\matstacks\SocketTeknologi\SocketTeknologi\bin\Debug\netcoreapp3.0\SocketTeknologi.runtimeconfig.json
+D:\Programmering\matstacks\SocketTeknologi\SocketTeknologi\bin\Debug\netcoreapp3.0\SocketTeknologi.runtimeconfig.dev.json
+D:\Programmering\matstacks\SocketTeknologi\SocketTeknologi\bin\Debug\netcoreapp3.0\SocketTeknologi.dll
+D:\Programmering\matstacks\SocketTeknologi\SocketTeknologi\bin\Debug\netcoreapp3.0\SocketTeknologi.pdb
+D:\Programmering\matstacks\SocketTeknologi\SocketTeknologi\obj\Debug\netcoreapp3.0\SocketTeknologi.AssemblyInfoInputs.cache
+D:\Programmering\matstacks\SocketTeknologi\SocketTeknologi\obj\Debug\netcoreapp3.0\SocketTeknologi.AssemblyInfo.cs
+D:\Programmering\matstacks\SocketTeknologi\SocketTeknologi\obj\Debug\netcoreapp3.0\SocketTeknologi.csproj.CoreCompileInputs.cache
+D:\Programmering\matstacks\SocketTeknologi\SocketTeknologi\obj\Debug\netcoreapp3.0\SocketTeknologi.dll
+D:\Programmering\matstacks\SocketTeknologi\SocketTeknologi\obj\Debug\netcoreapp3.0\SocketTeknologi.pdb
+D:\Programmering\matstacks\SocketTeknologi\SocketTeknologi\obj\Debug\netcoreapp3.0\SocketTeknologi.genruntimeconfig.cache
