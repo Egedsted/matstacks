@@ -11,21 +11,43 @@ namespace MatStacks.Controllers
 {
 
     public class ForumController : Controller
-    { 
+    {
+        private readonly SubjectDataContext db;
+
+        public ForumController(SubjectDataContext db)
+        {
+            this.db = db; 
+
+             
+        }
+
         public IActionResult Index()
         {
-            List<Subject> subjects = new List<Subject> {
-            new Subject {Title = "Opgaver", Id = 1, Description = "Here u shall add numbers together"},
-            new Subject {Title = "Beviser", Id = 2, Description = "Here u shall prove numbers"},
-            new Subject {Title = "Blandet", Id = 3, Description = "Here u shall put numbers together"},
-            new Subject {Title = "Hjælp", Id = 4, Description = "Here u shall help numbers together"},
-            new Subject {Title = "Statistik", Id = 5, Description = "Here u shall count numbers together and put them in a list"},
-            new Subject {Title = "Funktioner", Id = 6, Description = "Here u shall function numbers together"}
-            }; 
+            var subjects = db.Subjects.ToList(); 
+
             return View(subjects);
         }
 
+        [HttpGet] // default værdi, totalt unødvendig kodning
+        public IActionResult Create()
+        {
 
+            return View(); 
+
+        }
+
+        [HttpPost]
+        public IActionResult Create(Subject subject)
+        {
+            if (!ModelState.IsValid)
+                return View();
+          
+            db.Subjects.Add(subject);
+            db.SaveChanges();
+
+            return RedirectToAction("Index");     
+        }
+        
 
         //Smart pis man ka lukke sammen hvis man har lyst 
         #region 

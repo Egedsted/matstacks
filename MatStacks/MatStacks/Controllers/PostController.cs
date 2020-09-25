@@ -25,7 +25,7 @@ namespace MatStacks.Controllers
 
             return View(); 
 
-            //VI ER FLYVENDE
+            //HJÆLP
         }
 
     }
