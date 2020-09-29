@@ -42,11 +42,12 @@ namespace MatStacks.Controllers
             if (!ModelState.IsValid)
                 return View();
             p.Date = DateTime.Now;
-            //p.Author = User.Identity.Name;
+            p.Author = User.Identity.Name;
+            p.Id = 0;
             var subject = db.Subjects.Where(x => x.Id == id)
                 .Include(x => x.Posts).FirstOrDefault();
             subject.Posts.Add(p);
-            db.Update<Subject>(subject);
+            db.Update(subject);
             db.SaveChanges();
 
             return View();

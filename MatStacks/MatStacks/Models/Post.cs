@@ -20,8 +20,8 @@ namespace MatStacks.Models
 
         public DateTime Date { get; set; }
 
-        public List<Comment> Comments { get; set; } = new List<Comment> { new Comment {Author = "Din mor", Date = DateTime.Now, Id = 1, ResponsText = "Nej jeg tror du tager fejl", Score = 3 },
-            new Comment { Author = "Din far", Date = DateTime.Now, Id = 2, ResponsText = "Ja jeg tror du tager fejl", Score = 1337 }};
+        public List<Comment> Comments { get; set; } = new List<Comment> { new Comment {Author = "Din mor", Date = DateTime.Now, ResponsText = "Nej jeg tror du tager fejl", Score = 3 },
+            new Comment { Author = "Din far", Date = DateTime.Now, ResponsText = "Ja jeg tror du tager fejl", Score = 1337 }};
 
     }
 }
