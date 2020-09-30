@@ -10,6 +10,18 @@
  {
     <h2> @c.ResponsText </h2> 
     <h3> @c.Author </h3> 
-    <h3>@DateTime.Now </h3>
+    <h3>@c.Date </h3>
     <h4> @c.Score </h4> 
  }
+
+@using (Html.BeginForm("CreateComment", "Post", FormMethod.Post))
+{
+    @Html.ValidationSummary()
+<p>
+    @Html.TextAreaFor(x => x.NewComment.ResponsText)
+    @Html.HiddenFor(x => x.Id)
+</p>
+<p>
+    <button type="submit">Ny Kommentar</button>
+</p>
+}

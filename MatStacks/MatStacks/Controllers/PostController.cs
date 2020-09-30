@@ -18,20 +18,31 @@ namespace MatStacks.Controllers
         }
         public IActionResult Index(long? id)
         {
-            List<Post> posts = new List<Post> { new Post { Title = "2+2", Author = "Siboni", Body = "Jeg tror at 2+2 = 3", Date = DateTime.Now, Id = 1 },
-                new Post { Title = "A+B", Author = "Siboni", Body = "Jeg tror at A+B = 3", Date = DateTime.Now, Id = 2 } };
-            foreach (var p in posts)
-            {
-                if(id == p.Id)
-                {
-                    return View(p);
-                }
-            }
-
-            return View(); 
+            var post = db.Posts.Where(x => x.Id == id).Include(x => x.Comments).FirstOrDefault();
+            return View(post); 
 
             //HJÆLP
         }
+
+        [HttpPost]
+        public IActionResult CreateComment(long id, Comment NewComment)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
+
+            NewComment.Date = DateTime.Now;
+            NewComment.Author = User.Identity.Name;
+            //NewComment.Id = 0;
+            var post = db.Posts.Where(x => x.Id == id).Include(x => x.Comments).FirstOrDefault();
+            post.Comments.Add(NewComment);
+            db.Update(post);
+            db.SaveChanges();
+
+            return RedirectToAction("Index", "Post", new { Id = id });
+        }
+
         public IActionResult Create(long Id)
         {
             return View();
