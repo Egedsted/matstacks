@@ -18,11 +18,9 @@ namespace MatStacks.Controllers
         }
         public IActionResult Index(long? id)
         {
-            var post = db.Posts.Where(x => x.Id == id).Include(x => x.Comments).FirstOrDefault();
+            var post = db.Posts.Where(x => x.Id == id).Include(x => x.Comments).Include(x => x.Ratings).FirstOrDefault();
             return View(post); 
-
-            //HJÆLP
-        }
+        }   
 
         [HttpPost]
         public IActionResult CreateComment(long id, Comment NewComment)
@@ -35,12 +33,29 @@ namespace MatStacks.Controllers
             NewComment.Date = DateTime.Now;
             NewComment.Author = User.Identity.Name;
             //NewComment.Id = 0;
-            var post = db.Posts.Where(x => x.Id == id).Include(x => x.Comments).FirstOrDefault();
+            var post = db.Posts.Where(x => x.Id == id).Include(x => x.Comments).Include(x => x.Ratings).FirstOrDefault();
             post.Comments.Add(NewComment);
             db.Update(post);
             db.SaveChanges();
 
             return RedirectToAction("Index", "Post", new { Id = id });
+        }
+
+        [HttpPost]
+        public IActionResult CreateRating(long Id, Rating NewRating)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
+
+            NewRating.Author = User.Identity.Name;
+            var post = db.Posts.Where(x => x.Id == Id).Include(x => x.Comments).Include(x => x.Ratings).FirstOrDefault();
+            post.Ratings.Add(NewRating);
+            db.Update(post);
+            db.SaveChanges();
+
+            return RedirectToAction("Index", "Post", new { Id = Id });
         }
 
         public IActionResult Create(long Id)

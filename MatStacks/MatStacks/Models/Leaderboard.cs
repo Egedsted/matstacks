@@ -7,8 +7,7 @@ namespace MatStacks.Models
 {
     public class Leaderboard
     {
-        public User User { get; set; }
-
+        //Der mangler en bruger :))
         public int Point { get; set; }
 
     }

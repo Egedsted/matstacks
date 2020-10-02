@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore.ValueGeneration;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -7,14 +9,20 @@ namespace MatStacks.Models
 {
     public class User
     {
-        public string Username { get; set; }
+        [Required]
+        [EmailAddress, MaxLength(500)]
+        [Display(Name = "Email Address")]
+        public string EmailAddress { get; set; }
 
+        [Required]
+        [DataType(DataType.Password)]
         public string Password { get; set; }
 
-        public int UserType { get; set; } //TODO: IDENTITY INJECTION?
+        [Compare("Password", ErrorMessage = "Passwords must match")]
+        [Display(Name = "Confirm Password")]
+        public string ConfirmPassword { get; set; }
 
-        public int Points { get; set; }
-
-        public long Id { get; set; }
+        [Display(Name = "Remember Me")]
+        public bool RememberMe { get; set; }
     }
 }

@@ -10,6 +10,7 @@ namespace MatStacks.Models
     {
         public DbSet<Subject> Subjects { get; set;}
         public DbSet<Post> Posts { get; set; }
+        public DbSet<Rating> Ratings { get; set; }
 
         public SubjectDataContext(DbContextOptions<SubjectDataContext>options) : base (options)
         {

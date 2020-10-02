@@ -6,6 +6,7 @@ using MatStacks.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -36,6 +37,15 @@ namespace MatStacks
             services.AddDbContext<SubjectDataContext>(options =>
             {
                 var connectionString = Configuration.GetConnectionString("SubjectDataContext");
+
+                options.UseSqlServer(connectionString);
+            });
+
+            services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<IdentityDataContext>();
+
+            services.AddDbContext<IdentityDataContext>(options =>
+            {
+                var connectionString = Configuration.GetConnectionString("IdentityDataContext");
 
                 options.UseSqlServer(connectionString);
             });

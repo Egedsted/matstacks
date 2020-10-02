@@ -5,23 +5,44 @@
 <h2>@Model.Body </h2>
 <h3>@Model.Date</h3>
 <h4>@Model.Author</h4>
+<h5>Rating @Model.PostScore</h5>
+
+
+
+@using (Html.BeginForm("CreateRating", "Post", FormMethod.Post))
+{
+<p>
+    @Html.LabelFor(x => x.NewRating)
+    @Html.RadioButtonFor(x => x.NewRating.UserRating, 1)
+    @Html.RadioButtonFor(x => x.NewRating.UserRating, 2)
+    @Html.RadioButtonFor(x => x.NewRating.UserRating, 3)
+    @Html.RadioButtonFor(x => x.NewRating.UserRating, 4)
+    @Html.RadioButtonFor(x => x.NewRating.UserRating, 5)
+    @Html.HiddenFor(x => x.Id)
+</p>
+    <p><button type="submit">Indsend</button></p>
+}
+
 
 @foreach (var c in Model.Comments)
- {
-    <h2> @c.ResponsText </h2> 
-    <h3> @c.Author </h3> 
+{
+    <h2> @c.ResponsText </h2>
+    <h3> @c.Author </h3>
+
     <h3>@c.Date </h3>
-    <h4> @c.Score </h4> 
- }
+    <h4> @c.Score </h4>
+
+}
 
 @using (Html.BeginForm("CreateComment", "Post", FormMethod.Post))
 {
     @Html.ValidationSummary()
-<p>
-    @Html.TextAreaFor(x => x.NewComment.ResponsText)
-    @Html.HiddenFor(x => x.Id)
-</p>
-<p>
-    <button type="submit">Ny Kommentar</button>
-</p>
+    <p>
+        @Html.TextAreaFor(x => x.NewComment.ResponsText)
+        @Html.HiddenFor(x => x.Id)
+    </p>
+    <p>
+        <button type="submit">Ny Kommentar</button>
+    </p>
+
 }
