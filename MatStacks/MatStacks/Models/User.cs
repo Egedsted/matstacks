@@ -24,5 +24,7 @@ namespace MatStacks.Models
 
         [Display(Name = "Remember Me")]
         public bool RememberMe { get; set; }
+
+        public string yeetmeister { get; set; }
     }
 }
