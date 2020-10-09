@@ -1,16 +1,20 @@
 ﻿@model MatStacks.Models.Subject
-
+@{
+    Layout = "_Layout";
+}
 <h1>@Model.Title</h1>
 
 <h3>@Model.Description</h3>
 
 @foreach (var p in Model.Posts)
 {
-    <div>
-       
-        <h2>
-            @Html.ActionLink(@p.Title, "Index", "Post", new { id = p.Id }, null)
-        </h2>
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+            <h1 class="w3-text-teal">@Html.ActionLink(@p.Title, "Index", "Post", new { id = p.Id }, null)</h1>
+            <p>
+                @p.Body
+            </p>
+        </div>
     </div>
 }
 

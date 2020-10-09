@@ -1,8 +1,11 @@
 ﻿@model IEnumerable<MatStacks.Models.Subject>
 
+@{ 
+    Layout = "_Layout";
+}
 
 
-        @{ foreach (var s in Model)
+        @foreach (var s in Model)
             {
             <h2>
                 @Html.ActionLink(@s.Title, "Index", "Subject", new { id = s.Id }, null)
@@ -11,4 +14,4 @@
                 <p>
                     @s.Description
                 </p>
-            }}
+            }
