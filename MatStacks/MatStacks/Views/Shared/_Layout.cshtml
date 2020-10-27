@@ -26,12 +26,11 @@
         <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
             <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
             <a href="#" class="w3-bar-item w3-button w3-theme-l1">Logo</a>
-            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
-            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Values</a>
-            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">News</a>
-            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
-            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Clients</a>
-            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Partners</a>
+            <a href="forum/index" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Forum</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Opgave</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Leaderboard</a>
+            <a href="Account/Login" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Login</a>
+            <a href="Account/Register" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Register</a>
         </div>
     </div>
 
@@ -52,30 +51,13 @@
         </div>
     </div>
 
-    <script>
-        function w3_open() {
-            document.getElementById("mySidebar").style.display = "block";
-        }
-        function w3_close() {
-            document.getElementById("mySidebar").style.display = "none";
-        }
-    </script>
-
-
-
-
     <!-- Overlay effect when opening sidebar on small screens -->
     <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
     <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-    <div class="w3-main" style="margin-left:250px">
-        <h3> yikes</h3>
+    <div class="w3-main" style="margin-left:250px; margin-top:50px">
         @RenderBody()
     </div>
-
-
-
-
 
     <script>
         // Get the Sidebar
@@ -84,21 +66,11 @@
         // Get the DIV with overlay effect
         var overlayBg = document.getElementById("myOverlay");
 
-        // Toggle between showing and hiding the sidebar, and add overlay effect
         function w3_open() {
-            if (mySidebar.style.display === 'block') {
-                mySidebar.style.display = 'none';
-                overlayBg.style.display = "none";
-            } else {
-                mySidebar.style.display = 'block';
-                overlayBg.style.display = "block";
-            }
+            document.getElementById("mySidebar").style.display = "block";
         }
-
-        // Close the sidebar with the close button
         function w3_close() {
-            mySidebar.style.display = "none";
-            overlayBg.style.display = "none";
+            document.getElementById("mySidebar").style.display = "none";
         }
     </script>
 
