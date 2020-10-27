@@ -76,7 +76,7 @@ namespace MatStacks.Controllers
             db.Update(subject);
             db.SaveChanges();
 
-            return View();
+            return RedirectToAction("Index","Subject", new { Id = id });
         }
     }
 }

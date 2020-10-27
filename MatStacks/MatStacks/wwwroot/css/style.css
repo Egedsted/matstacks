@@ -35,3 +35,7 @@ body {
         display: none;
     }
 }
+.divClass .w3-top {
+    width: 100%;
+    margin-bottom: 30px;
+}

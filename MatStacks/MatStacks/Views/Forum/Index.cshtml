@@ -4,14 +4,55 @@
     Layout = "_Layout";
 }
 
+<!-- Sidebar -->
+    <div class="w3-sidebar w3-bar-block w3-dark-grey w3-animate-left" style="display:none" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large"
+                onclick="w3_close()">
+            Close &times;
+        </button>
 
-@foreach (var s in Model)
-{
-    <h2>
-        @Html.ActionLink(@s.Title, "Index", "Subject", new { id = s.Id }, null)
-    </h2>
+        @foreach (var s in Model)
+        {
+            <a>
+                @Html.ActionLink(@s.Title, "Index", "Subject", new { id = s.Id }, null)
+            </a>
 
-    <p>
-        @s.Description
-    </p>
-}
+            <p>
+                @s.Description
+            </p>
+        }
+    </div>
+
+<div>
+    <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">&#9776;</button>
+    <div class="w3-container">
+    </div>
+</div>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px; margin-top:50px">
+
+</div>
+
+<script>
+    // Get the Sidebar
+    var mySidebar = document.getElementById("mySidebar");
+
+    // Get the DIV with overlay effect
+    var overlayBg = document.getElementById("myOverlay");
+
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+    }
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+    }
+</script>
+
+
+
+
+
