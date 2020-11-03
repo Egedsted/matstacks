@@ -15,7 +15,35 @@ namespace MatStacks.Controllers
         {
             this.db = db;
         }
-        public IActionResult Index(long? id)
+        
+        public IActionResult Index()
+		{
+            return View(db.ExerciseSubjects.ToArray());
+		} 
+        
+        public IActionResult Subject(long Id)
+		{
+            return View(db.ExerciseSubjects.Find(Id));
+		}
+
+        public IActionResult Create()
+		{
+            return View();
+		}
+
+        [HttpPost]
+        public IActionResult Create(ExerciseSubject exerciseSubject)
+		{
+            if (!ModelState.IsValid)
+                return View();
+
+            db.ExerciseSubjects.Add(exerciseSubject);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        
+        public IActionResult Exercise(long? id)
         {
             var exerciseSubject = db.ExerciseSubjects.Where(x => x.Id == id)
                 .Include(x => x.Exercises).FirstOrDefault();

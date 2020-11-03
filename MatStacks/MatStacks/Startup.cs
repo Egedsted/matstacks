@@ -40,6 +40,13 @@ namespace MatStacks
 
                 options.UseSqlServer(connectionString);
             });
+            
+            services.AddDbContext<ExerciseSubjectDataContext>(options =>
+            {
+                var connectionString = Configuration.GetConnectionString("ExerciseSubjectDataContext");
+
+                options.UseSqlServer(connectionString);
+            });
 
             services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<IdentityDataContext>();
 

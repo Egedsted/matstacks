@@ -1,0 +1,20 @@
+﻿@model MatStacks.Models.ExerciseSubject[]
+
+@{
+	Layout = "_Layout";
+}
+
+<a href="ExerciseSubject/Create">Create new subject</a>
+<br />
+<br />
+
+@foreach (var item in Model)
+{
+	<a href="ExerciseSubject/Subject/@item.Id">@item.Title</a>
+	<br />
+	@item.Description
+	<br />
+	<br />
+}
+
+

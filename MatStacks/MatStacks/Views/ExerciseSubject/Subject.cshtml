@@ -1,0 +1,17 @@
+﻿@model MatStacks.Models.ExerciseSubject
+
+@{
+	Layout = "_Layout";
+}
+
+@Model.Title
+<br />
+@Model.Description
+<br />
+@foreach (var item in Model.Exercises)
+{
+	@item.Title
+	<br />
+	@item.Body
+}
+
