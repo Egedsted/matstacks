@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 
 namespace CRUDAPIUGE40PROGRAMMERINGKOMNU
 {
@@ -26,9 +27,16 @@ namespace CRUDAPIUGE40PROGRAMMERINGKOMNU
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options => {
+                options.AddDefaultPolicy(builder =>
+                {
+                    builder.WithOrigins("http://localhost:51912")
+                    .AllowAnyHeader()
+                    .AllowAnyMethod();
+                });
+            });
             services.AddControllers();
-            services.AddDbContext<CigarrettesDataContext>(options => options.("Cigarrettes" ));
-            
+            services.AddDbContext<CigarrettesDataContext>(options => options.UseInMemoryDatabase("Cigarrettes" ));            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -40,6 +48,8 @@ namespace CRUDAPIUGE40PROGRAMMERINGKOMNU
             }
 
             app.UseRouting();
+
+            app.UseCors();
 
             app.UseAuthorization();
 
