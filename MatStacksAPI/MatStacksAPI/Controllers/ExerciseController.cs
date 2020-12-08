@@ -18,6 +18,7 @@ namespace MatStacksAPI.Controllers
             this.db = db;
         }
 
+        [HttpGet]
         public IActionResult GetAllExercises()
         {
             return Ok(db.Exercises.ToList());
