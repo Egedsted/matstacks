@@ -38,6 +38,17 @@ namespace MatStacksAPI
 
                 options.UseSqlServer(connectionString);
             });
+
+            services.AddCors(options => 
+            {
+                options.AddDefaultPolicy(builder =>
+                {
+                    builder.WithOrigins("http://localhost:61509")
+                    .AllowAnyOrigin()
+                    .AllowAnyMethod();
+                });
+            });
+
             services.AddSwaggerGen(c => 
             {
                 c.SwaggerDoc("v1", new OpenApiInfo
@@ -82,6 +93,8 @@ namespace MatStacksAPI
             //app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors();
 
             app.UseAuthorization();
 
