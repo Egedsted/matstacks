@@ -1,0 +1,46 @@
+﻿@page "/fetchdata"
+
+@using Matstacks.Data
+@inject ExerciseService ExerciseService
+
+<h1>Exercises</h1>
+
+<p>Fetched data from API: </p>
+
+@if (exercises == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Body)</th>
+                <th>Creation date</th>
+                <th>Difficulty</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var exercise in exercises)
+            {
+                <tr>
+                    <td>@exercise.Title</td>
+                    <td>@exercise.Body</td>
+                    <td>Date posted: @exercise.CreateDate</td>
+                    <td>Difficulty: @exercise.Difficulty</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<Exercise> exercises;
+
+    protected override async Task OnInitializedAsync()
+    {
+        exercises = await ExerciseService.GetExercises();
+    }
+}
