@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@addTagHelper *, MatStacks
+<!DOCTYPE html>
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -49,14 +50,26 @@
             </a>
 
             <!-- Login Link -->
-            <a href="@Url.Action("Login", "Account")" class="w3-bar-item w3-button w3-hide-small w3-hover-white">
-                Login
-            </a>
 
-            <!-- Register Link -->
-            <a href="@Url.Action("Register", "Account")" class="w3-bar-item w3-button w3-hide-small w3-hover-white">
-                Register
-            </a>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <form id="logout" action="@Url.Action("Logout", "Account")" method="post">
+                    <a href="javascript: $('#logout').submit()" class="nav-link text-dark">
+                        Logout
+                    </a>
+                </form>
+            }
+            else
+            {
+                <a href="@Url.Action("Login", "Account")" title="log in" class="nav-link text-dark">
+                    Login
+                </a>
+                <a href="@Url.Action("Register", "Account")" class="w3-bar-item w3-button w3-hide-small w3-hover-white">
+                    Register
+                </a>
+
+            }
+
         </div>
     </div>
 

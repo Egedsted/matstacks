@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using MatStacks.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using System;
@@ -6,44 +7,37 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 namespace MatStacks.Controllers
 {
     public class AccountController : Controller
     {
+        private readonly SignInManager<IdentityUser> signInManager;
         private readonly UserManager<IdentityUser> userManager;
 
-        private readonly SignInManager<IdentityUser> signInManager;
-
-        //Her er et super eksempel på en Dependency Injection :))
-        //HVAD ER EN DEPENDENCY INJECTION???? vvvv
-        public AccountController(SignInManager<IdentityUser> signInManager, UserManager<IdentityUser> userManager)
+        public AccountController(SignInManager<IdentityUser> signInManager,
+            UserManager<IdentityUser> userManager)
         {
-            
-            this.userManager = userManager;
             this.signInManager = signInManager;
+            this.userManager = userManager;
         }
-
-        public IActionResult Login()
-        {
-            return View(new MatStacks.Models.User());
-        }
-
         public IActionResult Register()
         {
-            return View(new MatStacks.Models.User());
+            return View(new RegisterViewModel());
         }
 
         [HttpPost]
-        public async Task<IActionResult> Register(MatStacks.Models.User user)
+        public async Task<IActionResult> Register(RegisterViewModel registration)
         {
             if (!ModelState.IsValid)
+                return View(registration);
+
+            var newUser = new IdentityUser
             {
-                return View();
-            }
-
-            var identityUser = new IdentityUser { Email = user.EmailAddress, UserName = user.EmailAddress};
-
-            var result = await userManager.CreateAsync(identityUser,user.Password);
+                Email = registration.EmailAddress,
+                UserName = registration.EmailAddress,
+            };
+            var result = await userManager.CreateAsync(newUser, registration.Password);
 
             if (!result.Succeeded)
             {
@@ -53,8 +47,40 @@ namespace MatStacks.Controllers
                 }
                 return View();
             }
-
             return RedirectToAction("Login");
+        }
+        public IActionResult Login()
+        {
+            return View(new LoginViewModel());
+        }
+        [HttpPost]
+        public async Task<IActionResult> Login(LoginViewModel login, string returnUrl = null)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
+            var result = await signInManager.PasswordSignInAsync(login.EmailAddress, login.Password, login.RememberMe, false);
+            if (!result.Succeeded)
+            {
+                ModelState.AddModelError("", "Login error!");
+                return View();
+            }
+            if (string.IsNullOrWhiteSpace(returnUrl))
+            {
+                return RedirectToAction("Index", "Forum");
+            }
+            return Redirect(returnUrl);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Logout(string returnUrl = null)
+        {
+            await signInManager.SignOutAsync();
+            if (string.IsNullOrWhiteSpace(returnUrl))
+            {
+                return RedirectToAction("Index", "Forum");
+            }
+            return Redirect(returnUrl);
         }
     }
 }
