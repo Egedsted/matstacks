@@ -1,0 +1,17 @@
+﻿@model MatStacks.Models.Exercise
+@{
+    Layout = "_Layout";
+}
+
+<h1>@Model.Title</h1>
+<h5>@Model.Author</h5>
+<p>@Model.Body</p>
+
+@foreach (var answer in Model.Answers)
+{
+<h6>@answer.IsReviewed</h6>
+    <p>
+        @answer.Author
+        @answer.Body
+    </p>
+}

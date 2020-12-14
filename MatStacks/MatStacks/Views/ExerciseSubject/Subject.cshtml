@@ -1,7 +1,9 @@
-﻿@model MatStacks.Models.ExerciseSubject
+﻿@addTagHelper *, MatStacks
+@addTagHelper "*, Microsoft.AspNetCore.Mvc.TagHelpers"
+@model MatStacks.Models.ExerciseSubject
 
 @{
-	Layout = "_Layout";
+    Layout = "_Layout";
 }
 
 @Model.Title
@@ -10,8 +12,12 @@
 <br />
 @foreach (var item in Model.Exercises)
 {
-	@item.Title
-	<br />
-	@item.Body
+    @item.Title
+    <br />
+    @item.Body
 }
 
+
+<div>
+    <p><a asp-area="" asp-action="Create" asp-controller="Exercise">Create new exercise</a></p>
+</div>
