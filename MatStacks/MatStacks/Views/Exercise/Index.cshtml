@@ -1,4 +1,5 @@
 ﻿@model MatStacks.Models.Exercise
+@addTagHelper "*, Microsoft.AspNetCore.Mvc.TagHelpers"
 @{
     Layout = "_Layout";
 }
@@ -18,3 +19,5 @@
         </p>
     }
 }
+
+<p><a asp-area="" asp-action="CreateAnswer" asp-route-id="@Model.Id">Create Answer</a></p>

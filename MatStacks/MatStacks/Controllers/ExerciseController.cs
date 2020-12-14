@@ -4,6 +4,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace MatStacks.Controllers
 {
@@ -16,9 +18,9 @@ namespace MatStacks.Controllers
         }
         public IActionResult Index(long id)
         {
-            
-            var exercise = db.Exercise.Find(id);
-            if(exercise != null)
+
+            var exercise = db.Exercise.Where(x => x.Id == id).Include(x => x.Answers).FirstOrDefault();
+            if (exercise != null)
             {
                 return View(exercise);
             }
@@ -28,7 +30,31 @@ namespace MatStacks.Controllers
             }
             
         }
-
+        public IActionResult CreateAnswer(long id)
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult CreateAnswer(long id,[Bind("Body")] Answer answer)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
+            //Filling answer object with our data
+            answer.Author = User.Identity.Name;
+            answer.SubmissionDate = DateTime.Now;
+            answer.Id = 0;
+            var exercise = db.Exercise.Where(x => x.Id == id).Include(x => x.Answers).FirstOrDefault();
+            if(exercise.Answers == null)
+            {
+                exercise.Answers = new List<Answer>();
+            }
+            exercise.Answers.Add(answer);
+            db.Update(exercise);
+            db.SaveChanges();
+            return RedirectToAction("Index", new { id = id });
+        }
         public IActionResult Create(long id)
         {
             return View();

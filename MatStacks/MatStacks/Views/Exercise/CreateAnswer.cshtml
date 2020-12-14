@@ -1,0 +1,20 @@
+﻿@model MatStacks.Models.Answer
+@addTagHelper "*, Microsoft.AspNetCore.Mvc.TagHelpers"
+@{
+    Layout = "_Layout";
+}
+
+<fieldset class="answer">
+    <form role="form" asp-action="CreateAnswer">
+        <div asp-validation-summary="All" class="input-validation-error"></div>
+        <div class="form-group">
+            <label asp-for="Body"></label>
+            <input type="text" asp-for="Body" />
+            <span asp-validation-for="Body"></span>
+        </div>
+        <div>
+            <label>&nbsp;</label>
+            <button type="submit" class="btn btn-primary">Create new account</button>
+        </div>
+    </form>
+</fieldset>

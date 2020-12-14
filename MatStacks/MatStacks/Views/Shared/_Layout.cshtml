@@ -54,14 +54,14 @@
             @if (User.Identity.IsAuthenticated)
             {
                 <form id="logout" action="@Url.Action("Logout", "Account")" method="post">
-                    <a href="javascript: $('#logout').submit()" class="nav-link text-dark">
+                    <a href="javascript: $('#logout').submit()" class="w3-bar-item w3-button w3-hide-small w3-hover-white">
                         Logout
                     </a>
                 </form>
             }
             else
             {
-                <a href="@Url.Action("Login", "Account")" title="log in" class="nav-link text-dark">
+                <a href="@Url.Action("Login", "Account")" title="log in" class="w3-bar-item w3-button w3-hide-small w3-hover-white">
                     Login
                 </a>
                 <a href="@Url.Action("Register", "Account")" class="w3-bar-item w3-button w3-hide-small w3-hover-white">
