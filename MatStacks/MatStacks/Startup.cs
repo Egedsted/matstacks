@@ -69,6 +69,7 @@ namespace MatStacks
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            app.UseIdentity();
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -77,8 +78,6 @@ namespace MatStacks
             {
                 app.UseExceptionHandler("/Home/Error");
             }
-
-            app.UseIdentity();
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
