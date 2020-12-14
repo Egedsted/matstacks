@@ -14,13 +14,13 @@
 
         @foreach (var s in Model)
         {
-            <a>
+            <h5 style="margin-left:10px" class="SideBarOverSkrift">
                 @Html.ActionLink(@s.Title, "Index", "Subject", new { id = s.Id }, null)
-            </a>
+            </h5>
 
-            <p>
+            <h6 style="margin-left:10px" class="SideBarOverSkrift">
                 @s.Description
-            </p>
+            </h6>
         }
     </div>
 
@@ -36,12 +36,12 @@
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-<div class="w3-main" style="margin-left:250px; margin-top:50px">
-    <ul>
+<div class="w3-main" style="margin-left:0px; margin-top:50px" id="main">
+    <ul >
     @foreach (var item in Model)
     {
         <li>
-            <h3> <a asp-action="Index" asp-controller="Subject" asp-route-id="@item.Id" > @item.Title </a></h3>
+          <h3> <a asp-action="Index" asp-controller="Subject" asp-route-id="@item.Id"> @item.Title </a></h3>
 
             <p> @item.Description</p>
 
@@ -58,12 +58,22 @@
     // Get the DIV with overlay effect
     var overlayBg = document.getElementById("myOverlay");
 
+ 
+
     function w3_open() {
         document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+   
     }
     function w3_close() {
         document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
     }
+
+
+   
 </script>
 
 
