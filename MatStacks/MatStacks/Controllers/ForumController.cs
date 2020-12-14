@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using MatStacks.Models;
 using Microsoft.EntityFrameworkCore.Migrations.Operations;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MatStacks.Controllers
 {
@@ -28,7 +29,7 @@ namespace MatStacks.Controllers
             return View(subjects);
         }
 
-        [HttpGet] // default værdi, totalt unødvendig kodning
+        [HttpGet, Authorize(Roles = "Admin")] // default værdi, totalt unødvendig kodning
         public IActionResult Create()
         {
 
@@ -36,7 +37,7 @@ namespace MatStacks.Controllers
 
         }
 
-        [HttpPost]
+        [HttpPost, Authorize(Roles = "Admin")]
         public IActionResult Create(Subject subject)
         {
             if (!ModelState.IsValid)
