@@ -7,11 +7,14 @@
 <h5>@Model.Author</h5>
 <p>@Model.Body</p>
 
-@foreach (var answer in Model.Answers)
+@if (Model.Answers != null)
 {
-<h6>@answer.IsReviewed</h6>
-    <p>
-        @answer.Author
-        @answer.Body
-    </p>
+    @foreach (var answer in Model.Answers)
+    {
+        <h6>@answer.IsReviewed</h6>
+        <p>
+            @answer.Author
+            @answer.Body
+        </p>
+    }
 }

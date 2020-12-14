@@ -12,12 +12,12 @@
 <br />
 @foreach (var item in Model.Exercises)
 {
-    @item.Title
+<a asp-action="Index" asp-controller="Exercise" asp-route-id="@item.Id">@item.Title</a>
     <br />
-    @item.Body
+    <p>@item.Body</p>
 }
 
 
 <div>
-    <p><a asp-area="" asp-action="Create" asp-controller="Exercise">Create new exercise</a></p>
+    <p><a asp-area="" asp-action="Create" asp-controller="Exercise" asp-route-id="@Model.Id">Create new exercise</a></p>
 </div>

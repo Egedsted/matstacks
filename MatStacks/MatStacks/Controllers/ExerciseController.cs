@@ -16,7 +16,17 @@ namespace MatStacks.Controllers
         }
         public IActionResult Index(long id)
         {
-            return View(db.Exercises.Find(id));
+            
+            var exercise = db.Exercise.Find(id);
+            if(exercise != null)
+            {
+                return View(exercise);
+            }
+            else
+            {
+                return NotFound();
+            }
+            
         }
 
         public IActionResult Create(long id)
@@ -26,15 +36,21 @@ namespace MatStacks.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(Exercise exercise, long id)
         {
+            
+            exercise.Id = 0;
             if (!ModelState.IsValid)
             {
                 return View();
             }
             exercise.Author = User.Identity.Name;
             exercise.CreateDate = DateTime.Now;
-            db.Exercises.Add(exercise);
+            var subject = db.ExerciseSubjects.Find(id);
+            subject.Exercises.Add(exercise);
+            db.ExerciseSubjects.Update(subject);
             await db.SaveChangesAsync();
-            return RedirectToAction("Index", db.Exercises.Find(exercise).Id);
+            var list = db.Exercise.ToList();
+            return RedirectToAction("Index", list[list.Count -1].Id);
+            
         }
     }
 }

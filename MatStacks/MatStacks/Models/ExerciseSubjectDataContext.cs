@@ -9,7 +9,8 @@ namespace MatStacks.Models
     public class ExerciseSubjectDataContext : DbContext
     {
         public DbSet<ExerciseSubject> ExerciseSubjects { get; set; }
-        public DbSet<Exercise> Exercises { get; set; }
+        public DbSet<Exercise> Exercise { get; set; }
+        public DbSet<Answer> Answer { get; set; }
 
         public ExerciseSubjectDataContext(DbContextOptions<ExerciseSubjectDataContext> options) : base(options)
         {

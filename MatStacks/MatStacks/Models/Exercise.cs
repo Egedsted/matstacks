@@ -15,6 +15,6 @@ namespace MatStacks.Models
         public int Rating { get; set; }
         public string Difficulty { get; set; }
         public List<Answer> Answers { get; set; }
-        public Subject Subject { get; set; }
+        public ExerciseSubject Subject { get; set; }
     }
 }

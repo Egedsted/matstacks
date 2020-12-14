@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Data;
 
 namespace MatStacks.Controllers
 {
@@ -23,9 +24,8 @@ namespace MatStacks.Controllers
         
         public IActionResult Subject(long Id)
 		{
-            return View(db.ExerciseSubjects.Find(Id));
+            return View(db.ExerciseSubjects.Where(x => x.Id == Id).Include( x => x.Exercises).FirstOrDefault());
 		}
-
         public IActionResult Create()
 		{
             return View();
