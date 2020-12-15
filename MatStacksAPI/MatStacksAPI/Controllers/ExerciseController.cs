@@ -42,6 +42,13 @@ namespace MatStacksAPI.Controllers
             db.SaveChanges();
             return CreatedAtAction("GetById", new { id = exercise.Id }, exercise);
         }
+        [HttpPut("update")]
+        public IActionResult UpdateExercise(Exercise exercise)
+        {
+            db.Exercises.Update(exercise);
+            db.SaveChanges();
+            return Ok(exercise);
+        }
 
         [HttpDelete("Delete/{Id}")]
         public IActionResult DeleteExercise(long id)
