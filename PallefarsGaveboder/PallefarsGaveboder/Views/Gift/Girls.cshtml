@@ -1,0 +1,19 @@
+﻿@model IEnumerable<PallefarsGaveboder.Models.Gift>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <h1>Alle pigegaver i butikken: </h1>
+    <ul>
+        @foreach (var gift in Model)
+        {
+            <li>
+                <h3>@gift.Title</h3>
+                <p>@gift.CreationDate</p>
+                <h5>@gift.Description</h5>
+            </li>
+        }
+    </ul>
+
+</div>

@@ -1,0 +1,648 @@
+2020-12-07T16:06:52
+REQUEST:
+GET - /gift/index
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-07T16:06:53
+REQUEST:
+GET - /css/site.css
+ContentType: Not specified
+Host: localhost:650482020-12-07T16:06:53
+REQUEST:
+GET - /js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 304
+
+2020-12-07T16:07:02
+REQUEST:
+GET - /gift/26.10.2020/26.12.2020
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-07T16:07:02
+REQUEST:
+GET - /css/site.css
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-07T16:14:05
+REQUEST:
+GET - /
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-07T16:14:06
+REQUEST:
+GET - /css/site.css
+ContentType: Not specified
+Host: localhost:650482020-12-07T16:14:06
+REQUEST:
+GET - /js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0
+ContentType: Not specified
+Host: localhost:650482020-12-07T16:14:06
+REQUEST:
+GET - /lib/bootstrap/dist/js/bootstrap.bundle.min.js
+ContentType: Not specified
+Host: localhost:650482020-12-07T16:14:06
+REQUEST:
+GET - /lib/jquery/dist/jquery.min.js
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 304
+
+2020-12-07T16:14:07
+REQUEST:
+GET - /js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-07T16:14:12
+REQUEST:
+GET - /
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-07T16:14:12
+REQUEST:
+GET - /css/site.css
+ContentType: Not specified
+Host: localhost:650482020-12-07T16:14:12
+REQUEST:
+GET - /lib/bootstrap/dist/css/bootstrap.min.css
+ContentType: Not specified
+Host: localhost:650482020-12-07T16:14:12
+REQUEST:
+GET - /lib/bootstrap/dist/js/bootstrap.bundle.min.js
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+
+RESPONSE:
+Status Code: 200
+
+
+RESPONSE:
+Status Code: 200
+
+2020-12-07T16:14:12
+REQUEST:
+GET - /favicon.ico
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-07T16:16:07
+REQUEST:
+GET - /
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-07T16:16:31
+REQUEST:
+GET - /
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-07T16:17:15
+REQUEST:
+GET - /
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-07T16:17:54
+REQUEST:
+GET - /
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-07T16:18:24
+REQUEST:
+GET - /
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-07T16:18:34
+REQUEST:
+GET - /gift/index
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-07T16:18:36
+REQUEST:
+GET - /gift/create
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-07T16:18:56
+REQUEST:
+POST - /gift/Create
+ContentType: application/x-www-form-urlencoded
+Host: localhost:65048
+RESPONSE:
+Status Code: 302
+
+2020-12-07T16:18:56
+REQUEST:
+GET - /
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-07T16:19:00
+REQUEST:
+GET - /Home
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 404
+
+2020-12-07T16:19:32
+REQUEST:
+GET - /
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-07T16:19:39
+REQUEST:
+GET - /
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-07T16:21:12
+REQUEST:
+GET - /
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-07T16:21:13
+REQUEST:
+GET - /css/site.css
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 304
+
+2020-12-07T16:21:57
+REQUEST:
+GET - /
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-07T16:21:58
+REQUEST:
+GET - /js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 304
+
+2020-12-07T16:22:28
+REQUEST:
+GET - /
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-08T22:44:35
+REQUEST:
+GET - /
+ContentType: Not specified
+Host: localhost:650482020-12-08T22:44:37
+REQUEST:
+GET - /gift/26.10.2020/26.12.2020
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-08T22:44:39
+REQUEST:
+GET - /lib/bootstrap/dist/css/bootstrap.min.css
+ContentType: Not specified
+Host: localhost:650482020-12-08T22:44:39
+REQUEST:
+GET - /lib/jquery/dist/jquery.min.js
+ContentType: Not specified
+Host: localhost:650482020-12-08T22:44:39
+REQUEST:
+GET - /js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0
+ContentType: Not specified
+Host: localhost:650482020-12-08T22:44:39
+REQUEST:
+GET - /css/site.css
+ContentType: Not specified
+Host: localhost:650482020-12-08T22:44:39
+REQUEST:
+GET - /lib/bootstrap/dist/js/bootstrap.bundle.min.js
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 304
+
+
+RESPONSE:
+Status Code: 304
+
+2020-12-08T22:44:39
+REQUEST:
+GET - /js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-08T22:44:39
+REQUEST:
+GET - /favicon.ico
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-08T22:44:46
+REQUEST:
+GET - /gift/26.10.2020/26.12.2020
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-08T22:44:47
+REQUEST:
+GET - /lib/bootstrap/dist/css/bootstrap.min.css
+ContentType: Not specified
+Host: localhost:650482020-12-08T22:44:47
+REQUEST:
+GET - /lib/jquery/dist/jquery.min.js
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+
+RESPONSE:
+Status Code: 200
+
+2020-12-08T22:44:47
+REQUEST:
+GET - /favicon.ico
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-08T23:51:07
+REQUEST:
+GET - /
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-09T00:24:24
+REQUEST:
+GET - /
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-09T00:24:29
+REQUEST:
+POST - /Account/Logout
+ContentType: application/x-www-form-urlencoded
+Host: localhost:65048
+RESPONSE:
+Status Code: 302
+
+2020-12-09T00:24:29
+REQUEST:
+GET - /
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-09T00:24:30
+REQUEST:
+GET - /Account/Login
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-09T00:24:35
+REQUEST:
+POST - /Account/Login
+ContentType: application/x-www-form-urlencoded
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-09T00:24:39
+REQUEST:
+POST - /Account/Login
+ContentType: application/x-www-form-urlencoded
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-09T00:24:49
+REQUEST:
+POST - /Account/Login
+ContentType: application/x-www-form-urlencoded
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-09T00:24:57
+REQUEST:
+POST - /Account/Login
+ContentType: application/x-www-form-urlencoded
+Host: localhost:65048
+RESPONSE:
+Status Code: 302
+
+2020-12-09T00:24:57
+REQUEST:
+GET - /
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-09T00:24:59
+REQUEST:
+GET - /Home
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 404
+
+2020-12-09T00:25:00
+REQUEST:
+GET - /Home
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 404
+
+2020-12-09T00:25:04
+REQUEST:
+GET - /Gift/Privacy
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-09T00:25:07
+REQUEST:
+GET - /
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-09T00:25:08
+REQUEST:
+GET - /
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-09T00:25:11
+REQUEST:
+GET - /Gift/Girls
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-09T00:25:12
+REQUEST:
+GET - /
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-09T00:25:12
+REQUEST:
+GET - /Gift/Girls
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-09T00:25:13
+REQUEST:
+GET - /
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-09T00:25:14
+REQUEST:
+GET - /Gift/Girls
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-09T00:25:14
+REQUEST:
+GET - /
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-09T00:25:16
+REQUEST:
+GET - /Home
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 404
+
+2020-12-09T10:56:46
+REQUEST:
+GET - /
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-09T10:56:48
+REQUEST:
+GET - /js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0
+ContentType: Not specified
+Host: localhost:650482020-12-09T10:56:48
+REQUEST:
+GET - /lib/bootstrap/dist/js/bootstrap.bundle.min.js
+ContentType: Not specified
+Host: localhost:650482020-12-09T10:56:48
+REQUEST:
+GET - /lib/bootstrap/dist/css/bootstrap.min.css
+ContentType: Not specified
+Host: localhost:650482020-12-09T10:56:48
+REQUEST:
+GET - /css/site.css
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 304
+
+2020-12-09T10:56:48
+REQUEST:
+GET - /js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-09T10:56:50
+REQUEST:
+GET - /
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-09T10:56:50
+REQUEST:
+GET - /lib/bootstrap/dist/css/bootstrap.min.css
+ContentType: Not specified
+Host: localhost:650482020-12-09T10:56:50
+REQUEST:
+GET - /lib/jquery/dist/jquery.min.js
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-09T10:56:51
+REQUEST:
+GET - /favicon.ico
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-09T10:56:56
+REQUEST:
+GET - /gift/create
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 302
+
+2020-12-09T10:56:56
+REQUEST:
+GET - /Account/Login?ReturnUrl=%2Fgift%2Fcreate
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-09T10:56:56
+REQUEST:
+GET - /css/site.css
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-09T10:57:07
+REQUEST:
+POST - /Account/Login
+ContentType: application/x-www-form-urlencoded
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-09T10:57:17
+REQUEST:
+POST - /Account/Login
+ContentType: application/x-www-form-urlencoded
+Host: localhost:65048
+RESPONSE:
+Status Code: 302
+
+2020-12-09T10:57:17
+REQUEST:
+GET - /
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-09T10:57:22
+REQUEST:
+GET - /gift/create
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+
+2020-12-09T10:57:47
+REQUEST:
+POST - /gift/Create
+ContentType: application/x-www-form-urlencoded
+Host: localhost:65048
+RESPONSE:
+Status Code: 302
+
+2020-12-09T10:57:47
+REQUEST:
+GET - /
+ContentType: Not specified
+Host: localhost:65048
+RESPONSE:
+Status Code: 200
+

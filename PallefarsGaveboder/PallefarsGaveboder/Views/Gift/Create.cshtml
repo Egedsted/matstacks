@@ -1,0 +1,43 @@
+﻿@addTagHelper "*, Microsoft.AspNetCore.Mvc.TagHelpers"
+@model PallefarsGaveboder.Models.Gift
+
+
+    <fieldset class="gift">
+
+        <h1>New gift form</h1>
+
+        <br />
+
+        <form role="form" asp-action="Create">
+            <div asp-validation-summary="All" class="input-validation-error"></div>
+
+            <div class="form-group">
+                <label asp-for="Title"></label>
+                <input type="text" asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="field-validation-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Description"></label>
+                <input type="text" asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="field-validation-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="BoyGift"></label>
+                <input type="radio" asp-for="BoyGift" class="form-control" value="true" />
+                <span asp-validation-for="BoyGift" class="field-validation-error"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GirlGift"></label>
+                <input type="radio" asp-for="GirlGift" class="form-control" value="true" />
+                <span asp-validation-for="GirlGift" class="field-validation-error"></span>
+            </div>
+            <br />
+            <div>
+                <label>&nbsp;</label>
+                <button type="submit" class="btn btn-primary">Create gift</button>
+            </div>
+
+        </form>
+    </fieldset>
