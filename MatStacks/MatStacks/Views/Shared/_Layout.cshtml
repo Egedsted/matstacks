@@ -1,6 +1,6 @@
 ﻿@addTagHelper *, MatStacks
 <!DOCTYPE html>
-<title>W3.CSS Template</title>
+<title>Matstacks</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -54,9 +54,7 @@
             @if (User.Identity.IsAuthenticated)
             {
                 <form id="logout" action="@Url.Action("Logout", "Account")" method="post">
-                    <a href="javascript: $('#logout').submit()" class="w3-bar-item w3-button w3-hide-small w3-hover-white">
-                        Logout
-                    </a>
+                    <button type="submit" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Logout</button>
                 </form>
             }
             else

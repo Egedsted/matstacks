@@ -29,7 +29,7 @@ namespace MatStacks.Controllers
             return View(subjects);
         }
 
-        [HttpGet, Authorize(Roles = "Admin")] // default værdi, totalt unødvendig kodning
+        [HttpGet, Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
 

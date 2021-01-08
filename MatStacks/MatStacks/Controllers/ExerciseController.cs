@@ -53,7 +53,7 @@ namespace MatStacks.Controllers
             exercise.Answers.Add(answer);
             db.Update(exercise);
             db.SaveChanges();
-            return RedirectToAction("Index", new { id = id });
+            return RedirectToAction("Index", "Exercise", new { id = id });
         }
         public IActionResult Create(long id)
         {
